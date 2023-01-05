@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../execicio/style.css" />
+    <title>Astronauta</title>
+  </head>
+  <body>
+    <h1>Cadastro da Liga dos Astronautas</h1>
+    <form action="">
+      <div>
+        <label for="name">Nome: </label>
+        <input type="text" id="name" name="name" required />
+      </div>
+
+      <div>
+        <label for="email">E-mail: </label>
+        <input type="email" name="email" id="email" required />
+        <label for="psw">Password:</label>
+        <input type="password" name="psw" id="psw" required />
+      </div>
+
+      <div>
+        <label for="dataNasc">Data de nascimento: </label>
+        <input type="date" name="dataNasc" id="dataNasc" />
+        <label for="img">Foto: </label>
+        <input type="file" name="img" id="img" />
+      </div>
+
+      <div>
+        <label for="nasc">Nacionalidade: </label><br />
+        <select name="nasc" id="nasc">
+          <option value="brasileiro">brasileiro</option>
+          <option value="argentino">argentino</option>
+        </select>
+        <br />
+        <br />
+        <label for="fen">Feminino: </label>
+        <input type="radio" name="gen" id="fen" />
+        <label for="masc">Masculino: </label>
+        <input type="radio" name="gen" id="masc" />
+      </div>
+      <div>
+        <h3>Principais Qualidades</h3>
+        <label for="qs1">Inteligencia: </label>
+        <input type="checkbox" name="qs1" id="qs1" />
+        <label for="qs2">Resiliencia: </label>
+        <input type="checkbox" name="qs2" id="qs2" />
+        <label for="qs3">Preparo fisico: </label>
+        <input type="checkbox" name="qs3" id="qs3" />
+        <label for="qs4">Educacao </label>
+        <input type="checkbox" name="qs4" id="qs4" />
+        <label for="qs5">Teste: </label>
+        <input type="checkbox" name="qs5" id="qs5" />
+      </div>
+
+      <div>
+        <textarea
+          name="text"
+          id="text"
+          cols="30"
+          rows="10"
+          placeholder="Digite aqui"
+        ></textarea>
+      </div>
+      <div style="padding-left: 150px">
+        <input type="submit" value="Criar" />
+      </div>
+    </form>
+  </body>
+</html>
