@@ -1,0 +1,28 @@
+h1 {
+  color: blue;
+  border: 2px dashed yellow;
+}
+
+h2 {
+  color: blue;
+}
+
+li {
+  color: white;
+  border: 2px solid yellow;
+}
+
+body {
+  background-image: url("https://s1.static.brasilescola.uol.com.br/be/2020/11/luas-jupiter.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.titles {
+  color: brown;
+}
+
+#europe-moon {
+  color: aqua;
+  font-size: 40px;
+}
