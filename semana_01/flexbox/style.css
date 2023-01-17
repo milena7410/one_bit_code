@@ -8,20 +8,37 @@
   background-color: grey;
   min-height: 100vh;
   display: flex;
-  /* flex-direction: column; */
-  gap: 1px 20px;
+  flex-direction: column;
+  /* flex-direction: row; */
+  gap: 0px 15px;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .item {
   background-color: white;
-  width: 200px;
-  height: 200px;
+  width: 20%;
+  height: 80px;
   border: 2px solid black;
   font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* flex-basis: 200px; /*tamanho base
+  flex-grow: 1; */
+}
+
+.item1 {
+  order: 2;
+  align-self: flex-end;
+}
+
+.item2 {
+  order: 3;
+  /* flex-shrink: 2; */
+  /* flex: 1 0 200px; */
+}
+.item3 {
+  order: 1;
 }
