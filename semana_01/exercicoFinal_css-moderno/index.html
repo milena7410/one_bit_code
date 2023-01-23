@@ -8,41 +8,107 @@
     <title>Exercicio final</title>
   </head>
   <body>
-    <header class="header">
-      <div id="logo">
-        <img src="./images/logo-onebitcode.svg" alt="logo" />
-      </div>
-      <div class="buttons">
-        <button id="btn">Login</button>
-        <button id="btn">Registro</button>
-        <button id="btn">FAQ</button>
-      </div>
-    </header>
+    <!-- container = tela toda -->
     <div class="container">
-      <section class="cards-principal">
-        <h2>BEM VINDO A ONEBITSPORTS!</h2>
-        <p>
-          Aqui e onde voce encontra todos os itens mais novos e modernos do seu
-          esporte preferido
-        </p>
-        <div class="item item1"><p>item1</p></div>
-        <div class="item item2"><p>item2</p></div>
-        <div class="item item3"><p>item3</p></div>
-        <div class="item item4"><p>item4</p></div>
-        <div class="item item5"><p>item5</p></div>
-        <div class="item item6"><p>item6</p></div>
-        <div class="item item7"><p>item7</p></div>
-        <div class="item item8"><p>item8</p></div>
-        <div class="item item9"><p>item9</p></div>
-      </section>
-      <section class="cards-extras">
-        <div class="item item1"><p>item1</p></div>
-        <div class="item item2"><p>item2</p></div>
-        <div class="item item3"><p>item3</p></div>
-        <div class="item item4"><p>item4</p></div>
-        <div class="item item5"><p>item5</p></div>
-      </section>
-      <footer class="footer"></footer>
+      <!-- nav bar -->
+      <header class="header">
+        <!-- logo -->
+        <div id="logo">
+          <img src="./images/logo-onebitcode.svg" alt="logo" />
+        </div>
+        <!-- botoes -->
+        <div class="buttons">
+          <button id="btn">Login</button>
+          <button id="btn">Registro</button>
+          <button id="btn">FAQ</button>
+        </div>
+      </header>
+      <!-- fim navbar -->
+
+      <!-- titulo pag -->
+      <p class="sectionTitle" id="backtoTop">BEM VINDO A ONEBITSPORTS!</p>
+      <p class="sectionDescription">
+        Aqui e onde voce encontra todos os itens mais novos e modernos do seu
+        esporte preferido
+      </p>
+
+      <!-- conteudo principal -->
+      <section class="cards">
+        <div class="cards-main">     
+          <div class="categoryCards">
+            <img src="./images/boxe.jpg" alt="cardsMainImg" class="cardsMainImg">
+            <p class="cardsMainTitle">BOXE</p>
+            <p class="cardsMainDescription">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, aliquam.</p>
+          </div>
+
+          <div class="categoryCards">
+            <img src="./images/crossfit.jpg" alt="cardsMainImg" class="cardsMainImg">
+            <p class="cardsMainTitle">CROSSFIT</p>
+            <p class="cardsMainDescription">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, aliquam.</p>
+          </div>
+
+          <div class="categoryCards">
+            <img src="./images/natacao.jpg" alt="cardsMainImg" class="cardsMainImg">
+            <p class="cardsMainTitle">NATACAO</p>
+            <p class="cardsMainDescription">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, aliquam.</p>
+          </div>
+
+          <div class="categoryCards">
+            <img src="./images/roupas.jpg" alt="cardsMainImg" class="cardsMainImg">
+            <p class="cardsMainTitle">ROUPAS</p>
+            <p class="cardsMainDescription">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, aliquam.</p>
+          </div>
+
+          <div class="categoryCards">
+            <img src="./images/basquete.jpg" alt="cardsMainImg" class="cardsMainImg">
+            <p class="cardsMainTitle">BASQUETE</p>
+            <p class="cardsMainDescription">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, aliquam.</p>
+          </div>
+
+          <div class="categoryCards">
+            <img src="./images/trilha.jpg" alt="cardsMainImg" class="cardsMainImg">
+            <p class="cardsMainTitle">TRILHA</p>
+            <p class="cardsMainDescription">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, aliquam.</p>
+          </div>
+
+          <div class="categoryCards">
+            <img src="./images/tenis.jpg" alt="cardsMainImg" class="cardsMainImg">
+            <p class="cardsMainTitle">TENIS</p>
+            <p class="cardsMainDescription">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, aliquam.</p>
+          </div>
+        </div>
+   
+        <!-- conteudo lateral -->
+      <div class="cards-side">
+        <p>CATEGORIAS EXTRAS</p>
+        <div class="item-side">
+          <img src="./images/bicicletas.jpg" alt="cardsSideImg" class="cardsSideImg">
+          <p class="cardsSideTitle">BICICLETAS</p>
+        </div>
+        <div class="item-side">
+          <img src="./images/esportesNaNeve.jpg" alt="cardsSideImg" class="cardsSideImg">
+          <p class="cardsSideTitle">ESPORTES DE FRIO</p>
+        </div class="item-side">
+        <div class="item-side">
+          <img src="./images/futebolAmericano.jpg" alt="cardsSideImg" class="cardsSideImg">
+          <p class="cardsSideTitle">FUTEBOL AMERICANO</p>
+        </div>
+        <div class="item-side">
+          <img src="./images/skate.jpg" alt="cardsSideImg" class="cardsSideImg">
+          <p class="cardsSideTitle">SKATE</p>
+        </div>
+        <div class="item-side">
+          <img src="./images/yoga.jpg" alt="cardsSideImg" class="cardsSideImg">
+          <p class="cardsSideTitle">YOGA</p>
+        </div>
+        </section>
+      </div>
+      <!-- footer -->
+      <footer class="footer">
+        <!-- anocora -->
+        <img src="./images/logo-onebitcode.svg" alt="logo" class="logoFooter">
+        <a href="#backtoTop" class="footerAnchor">VOLTAR AO TOPO</a>
+      </footer>
     </div>
   </body>
 </html>
