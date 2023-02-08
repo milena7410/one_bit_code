@@ -10,9 +10,9 @@ window.alert(
     " " +
     sobrenome +
     " " +
-    "seu campo de estudos e: " +
+    "\nseu campo de estudos e: " +
     estudo +
     " " +
-    "Idade: " +
+    "\nIdade: " +
     idade
 );
