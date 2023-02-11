@@ -1,24 +1,31 @@
-const n1 = prompt("Digite o nome:");
-const ataque = prompt("Poder de ataque:");
-const n2 = prompt("Digite o nome de outro personagem");
-const vida = prompt("Digite os pontos de vida: ");
-const defesa = prompt("Pode de defesa:");
-const escudo = prompt("Personagem possui escudo?");
+const atacante = prompt("Qual é o nome do personagem atacante?");
+const poderDeAtaque = parseFloat(prompt("Qual é o seu poder de ataque?"));
 
-// transformando
-const poder_ataque = parseFloat(ataque);
-const poder_defesa = parseFloat(defesa);
+const defensor = prompt("Qual é nome do personagem defensor?");
+let pontosDeVida = parseFloat(prompt("Quantos pontos de vida ele possui?"));
+const poderDeDefesa = parseFloat(prompt("Qual é o seu poder de defesa?"));
+const possuiEscudo = parseFloat(prompt("Ele possui um escudo? (Sim/Não)"));
 
-// regras
-if (poder_ataque > poder_defesa) {
-  const dano = console.log("Dano = " + " " + (poder_ataque - poder_defesa));
-} else if (escudo === "sim") {
-  const dano = console.log((poder_ataque - poder_defesa) / 2);
-} else if (poder_ataque < poder_defesa) {
-  const dano = console.log("Dano = 0");
+let danoCausado = 0;
+
+if (poderDeAtaque > poderDeDefesa && possuiEscudo === "nao") {
+  danoCausado = poderDeAtaque - poderDeDefesa;
+} else if (poderDeAtaque > poderDeDefesa && possuiEscudo === "sim") {
+  danoCausado = (poderDeAtaque - poderDeDefesa) / 2;
 }
 
-const vida_atualizada = dano - vida;
-
-alert("PERSONAGEM: " + " " + n1 + " " + "\nvida:" + vida_atualizada);
-alert("PERSONAGEM: " + " " + n2 + " " + "\nvida:" + vida_atualizada);
+pontosDeVida -= danoCausado;
+alert(atacante + " causou " + danoCausado + " pontos de dano em " + defensor);
+alert(
+  atacante +
+    "\nPoder de ataque: " +
+    poderDeAtaque +
+    "\n\n" +
+    defensor +
+    "\nPontos de vida: " +
+    pontosDeVida +
+    "\nPoder de defesa: " +
+    poderDeDefesa +
+    "\nPossui escudo: " +
+    possuiEscudo
+);
