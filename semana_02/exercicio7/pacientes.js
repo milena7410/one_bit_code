@@ -1,11 +1,12 @@
+let fila = [];
 let opcoes = "";
-const fila = [];
 
 do {
   let paciente = "";
   for (let i = 0; i < fila.length; i++) {
+    const inicio = i + 1;
     //corrigir para comecar do 1 ao inves do 0
-    paciente += i + 1 + fila[i] + "\n";
+    paciente = inicio + "-" + fila[i] + "\n";
 
     opcoes = prompt(
       "pacientes:\n" +
@@ -23,7 +24,12 @@ do {
 
       case "2":
         let consultarPaciente = fila.shift();
-        alert("o paciente " + consultarPaciente + " sera consultado");
+        //verificar se esta vazio
+        if (consultarPaciente) {
+          alert("o paciente " + consultarPaciente + " sera consultado");
+        } else {
+          alert("nao ha pacientes na fila");
+        }
         break;
 
       case "3":

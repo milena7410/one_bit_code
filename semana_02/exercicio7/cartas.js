@@ -2,9 +2,12 @@ let opcoes = "";
 const pilha = ["a", "3", "5"];
 
 do {
-  alert("as cartas no monte sao: " + pilha);
-
-  opcoes = prompt("1) adicionar carta\n 2) puxar carta\n 3) sair");
+  opcoes = prompt(
+    "as cartas no monte sao: " +
+      pilha.length +
+      "\n" +
+      "1) adicionar carta\n 2) puxar carta\n 3) sair"
+  );
   switch (opcoes) {
     case "1":
       let cartaAdicionada = prompt("qual nome da carta a ser adicionada?");
