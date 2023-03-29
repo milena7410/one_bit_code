@@ -18,18 +18,40 @@ do {
       novoImovel.garagem = prompt("Possui garagem? ");
 
       // melhor interacao com usuario - utilizar confirm?
+      const confirmar = confirm(
+        "salvar esse imovel?\n" +
+          "\n nome do proprietario: " +
+          novoImovel.nomePropietario +
+          "\n quantidade de quartos: " +
+          novoImovel.qntQuarto +
+          "\n quantidade de banheiros: " +
+          novoImovel.qntBanheiro +
+          "\n garagem: " +
+          novoImovel.garagem
+      );
 
-      // adicionando imovel dentro do array
-      imoveis.push(novoImovel);
+      if (confirmar) {
+        // adicionando imovel dentro do array
+        imoveis.push(novoImovel);
+      }
       break;
+
     case "2": //exibir
       for (let i = 0; i < imoveis.length; i++) {
-        // for (let j = 0; j < imoveis[i].length; j++) {
-        //const elemento = imoveis[i][j];
-        // alert("listagem de todos imoveis: " + i + "dados: " + j + elemento);
-        alert("imovel: " + (i + 1));
+        alert(
+          "imovel: " +
+            (i + 1) + //para comecar do 1
+            "\n" +
+            "proprietario: " +
+            imoveis[i].nomePropietario +
+            "\nquantidade de quarto: " +
+            imoveis[i].qntQuarto +
+            "\nquantidade de banheiro: " +
+            imoveis[i].qntBanheiro +
+            "\n garagem: " +
+            imoveis[i].garagem
+        );
       }
-      //}
       break;
     case "3":
       alert("encerrando sistema... bye");
