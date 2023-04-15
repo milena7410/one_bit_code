@@ -1,11 +1,31 @@
+const vagas = [];
+
 //funcao criar vaga
-function criarVaga() {}
+function criarVaga() {
+  const novaVaga = {};
+  novaVaga.nome = prompt("Digite o nome da vaga");
+  novaVaga.descricao = prompt("Digite uma descricao sobre a vaga");
+  novaVaga.data = prompt("digite uma data limite");
 
+  const confirmar = confirm(
+    "deseja salvar essa vaga?\n" +
+      "\n nome: " +
+      novaVaga.nome +
+      "\n descicao: " +
+      novaVaga.descricao +
+      "\n data: " +
+      novaVaga.data
+  );
+
+  if (confirmar) {
+    vagas.push(novaVaga);
+  }
+}
 //funcao visualizar vaga
-function verVaga() {}
-
+function exibirElemento() {
+  alert(novaVaga, novaVaga.nome[i]);
+}
 //funcao para listar vagas
-function listarVagas() {}
 
 //menu
 function exibirMenu() {
@@ -29,10 +49,16 @@ function executar() {
 
     switch (opcoes) {
       case "1":
+        exibirElemento();
+        break;
+
+      case "2":
+        criarVaga();
         break;
 
       default:
         break;
     }
-  } while (condition);
+  } while (opcoes !== "6");
 }
+executar();
